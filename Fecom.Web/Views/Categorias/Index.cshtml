@@ -1,0 +1,21 @@
+﻿@model List<Fecom.Dominio.Entidades.Categoria>
+
+<h2>Listado de Categorías</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categoria in Model)
+        {
+            <tr>
+                <td>@categoria.Nombre</td>
+                <td>@categoria.Descripcion</td>
+            </tr>
+        }
+    </tbody>
+</table>

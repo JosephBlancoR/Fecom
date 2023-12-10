@@ -1,0 +1,21 @@
+﻿@model List<Fecom.Dominio.Entidades.Proveedor>
+
+<h2>Listado de Proveedores</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Contacto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var proveedor in Model)
+        {
+            <tr>
+                <td>@proveedor.Nombre</td>
+                <td>@proveedor.Contacto</td>
+            </tr>
+        }
+    </tbody>
+</table>

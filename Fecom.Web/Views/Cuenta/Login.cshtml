@@ -1,0 +1,38 @@
+﻿@model Fecom.Dominio.Entidades.LoginViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <h2>Iniciar Sesión</h2>
+    <form asp-controller="Cuenta" asp-action="Login" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Email">Correo:</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password">Contraseña:</label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <div class="custom-control custom-checkbox">
+                <input asp-for="RememberMe" type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Recordarme</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+    </form>
+    <a asp-controller="Cuenta" asp-action="Register" class="btn btn-primary">Register</a>
+</body>
+</html>
+
+
+

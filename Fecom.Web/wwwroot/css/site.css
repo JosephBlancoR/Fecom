@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto en color claro */
+}
+
+.flex-shrink-0 {
+    margin-left: 10px; /* Espacio entre la barra vertical y el divisor */
+}
+
+.vertical-divider {
+    border-right: 1px solid #dee2e6; /* Línea vertical como divisor */
+    height: 100vh; /* Altura máxima de la línea vertical */
+    position: fixed; /* Fijar la línea vertical */
+    top: 0;
+    left: 280px; /* Ancho de la barra vertical */
+}
+
+.copyright {
+    color: white;
+}
